@@ -1,197 +1,164 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-	<title>��Ŀʵս</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+<!doctype html>
+<html>
+<head lang="zh-cn">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>响应式导航</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css"
+
+ <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
-
-
+<!--导航栏-->
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 		<div class="navbar-header">
-			<a href="index.html" class="navbar-brand logo"><img src="img/logo.png" alt="ư����ѵ��"></a>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+			<a class="navbar-brand logo"><img src="img/logo.png" alt="logo"></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-nav">
+				<span class="sr-only">切换导航</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
 		</div>
-		<div class="collapse navbar-collapse" id="navbar-collapse">
+		<div class="collapse navbar-collapse" id="navbar-nav">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> ��ҳ</a></li>
-				<li><a href="information.html"><span class="glyphicon glyphicon-list"></span> ��Ѷ</a></li>
-				<li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> ����</a></li>
-				<li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> ����</a></li>
-			</ul>	
-		</div>
+				<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+				<li><a href="information.html"><span class="glyphicon glyphicon-list"></span> 资讯</a></li>
+				<li><a href="case.html"><span class="glyphicon glyphicon-fire"></span> 案例</a></li>
+				<li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span> 关于</a></li>
+			</ul>
+		</div>	
 	</div>
 </nav>
-
-
+<!--轮播图-->
 <div id="myCarousel" class="carousel slide">
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 		<li data-target="#myCarousel" data-slide-to="1"></li>
 		<li data-target="#myCarousel" data-slide-to="2"></li>
 	</ol>
-	<div class="carousel-inner">
+	<div class="carousel-inner banner">
 		<div class="item active" style="background:#223240">
-			<img src="img/slide1.png" alt="��һ��">
+			<img src="img/slide1.png" alt="第一张">
 		</div>
-		<div class="item" style="background:#F5E4DC;">
-			<img src="img/slide2.png" alt="�ڶ���">
+		<div class="item" style="background:#F5E4DC">
+			<img src="img/slide2.png" alt="第二张">
 		</div>
-		<!-- <div class="item" style="background:#DE2A2D;">
-			<img src="img/slide3.png" alt="������">
-		</div> -->
-<!-- 		<div style="background:#eee;">
-			<img src="img/slide.png" alt="������">
-		</div> -->
+		<div class="item" style="background:#DE2A2D">
+			<img src="img/slide3.png" alt="第三张">
+		</div>
 	</div>
+	<!--<a href="#myCarousel" data-slide="prev" class="carousel-control left">&lsaquo;</a>
+	<a href="#myCarousel" data-slide="next" class="carousel-control right">&rsaquo;</a>-->
+	
 	<a href="#myCarousel" data-slide="prev" class="carousel-control left">
-		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="glyphicon glyphicon-chevron-left"></span> 
 	</a>
 	<a href="#myCarousel" data-slide="next" class="carousel-control right">
-		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="glyphicon glyphicon-chevron-right"></span> 
 	</a>
 </div>
-
-
-<div class="tab1">
+<!--内容上-->
+<div class="content1">
 	<div class="container">
-		<h2 class="tab-h2">��Ϊʲôѡ��ư����ҵ��ѵ��</h2>
-		<p class="tab-p">ǿ���ʦ��������������ʵս�͹����γ̣���������ҵʵ���ʵ��ڷɣ�</p>
+		<h2 class="content1-h2">「为什么选择瓢城企业培训」</h2>
+		<p class="content1-p">强大的师资力量，完美的实战型管理课程，让您的企业实现质的腾飞！</p>
 		<div class="row">
 			<div class="col-md-6 col">
 				<div class="media">
-					<div class="media-left">
-						<a href="#"><img src="img/tab1-1.png" class="media-object" alt=""></a>
+					<div class="media-left media-top">
+						<a href="#"><img class="media-object" src="img/tab1-1.png" alt=""></a>
 					</div>
 					<div class="media-body">
-						<h4 class="media-heading">�γ�����</h4>
-						<p class="text-muted">��������У��֪���Ľ�ʦ��д��û���κ�ʵս��ֵ�Ľ̲ģ�</p>
-						<p>���ǣ�֪����ҵ�ҡ�����ѧ��ʦ���ϱ�д�ľ���ʵ���Խ̲ģ�</p>
+						<h4 class="media-heading">课程内容</h4>
+						<p class="text-muted">其他：高校不知名的讲师编写，没有任何实战价值的教材！</p>
+						<p>我们：知名企业家、管理学大师联合编写的具有实现性教材!</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col">
 				<div class="media">
-					<div class="media-left">
-						<a href="#"><img src="img/tab1-2.png" class="media-object" alt=""></a>
+					<div class="media-left media-top">
+						<a href="#"><img class="media-object" src="img/tab1-2.png" alt=""></a>
 					</div>
 					<div class="media-body">
-						<h4 class="media-heading">ʦ������</h4>
-						<p class="text-muted">��������ŷ�����ƴ�ѧ��ҵ�ġ�ҵ��û��֪���ȵĽ�ʦ��</p>
-						<p>���ǣ���������Ү³������һ����У����������������ר�ң�</p>
+						<h4 class="media-heading">课程内容</h4>
+						<p class="text-muted">其他：高校不知名的讲师编写，没有任何实战价值的教材！</p>
+						<p>我们：知名企业家、管理学大师联合编写的具有实现性教材!</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col">
+				<div class="media">
+					<div class="media-left media-top">
+						<a href="#"><img class="media-object" src="img/tab1-3.png" alt=""></a>
+					</div>
+					<div class="media-body">
+						<h4 class="media-heading">课程内容</h4>
+						<p class="text-muted">其他：高校不知名的讲师编写，没有任何实战价值的教材！</p>
+						<p>我们：知名企业家、管理学大师联合编写的具有实现性教材!</p>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6 col">
 				<div class="media">
-					<div class="media-left">
-						<a href="#"><img src="img/tab1-3.png" class="media-object" alt=""></a>
+					<div class="media-left media-top">
+						<a href="#"><img class="media-object" src="img/tab1-4.png" alt=""></a>
 					</div>
 					<div class="media-body">
-						<h4 class="media-heading">��ʱ����</h4>
-						<p class="text-muted">�������޷���֤�Ͽ�Ч�ʡ�û��ʱ����������޷���ɣ�</p>
-						<p>���ǣ���֤��ʱ������ϿΡ�Ч�ʸߡ��������������ɣ�</p>
+						<h4 class="media-heading">课程内容</h4>
+						<p class="text-muted">其他：高校不知名的讲师编写，没有任何实战价值的教材！</p>
+						<p>我们：知名企业家、管理学大师联合编写的具有实现性教材!</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 col">
-				<div class="media">
-					<div class="media-left">
-						<a href="#"><img src="img/tab1-4.png" class="media-object" alt=""></a>
-					</div>
-					<div class="media-body">
-						<h4 class="media-heading">�����Ŷ�</h4>
-						<p class="text-muted">�����������Ƹ�ġ�����ˮƽ�β�����ͨԱ����</p>
-						<p>���ǣ��ڲ����������ܹ����ø߶˷�����ѵ�ĸ߱�׼Ա����</p>
-					</div>
-				</div>
+			
+		</div>
+	</div>
+</div>
+
+<div class="content2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 content2-img">
+				<img src="img/tab2.png" class="img-responsive center-block" alt="学习体系">
+			</div>
+			<div class="col-sm-6 col-md-6 content2-text">
+				<h3>强大的学习体系</h3>
+				<p>经过管理学大师层层把关、让您的企业突飞猛进。</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="content3">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6 content3-img">
+				<img src="img/tab3.png" class="img-responsive center-block" alt="管理方式">
+			</div>
+			<div class="col-sm-6 col-md-6 content3-text">
+				<h3>完美的管理方式</h3>
+				<p>最新的管理培训方案，让您的企业赶超同行。</p>
 			</div>
 		</div>
 	</div>
 </div>
 
-
-<div class="tab2">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-sm-6 tab2-img">
-				<img src="img/tab2.png" class="auto img-responsive center-block" alt="">
-			</div>
-			<div class="text col-md-6 col-sm-6 tab2-text">
-				<h3>ǿ���ѧϰ��ϵ</h3>
-				<p>��������ѧ��ʦ���ѹء���������ҵͻ���ͽ���</p>
-			</div>
-		</div>
-	</div>
+<div id="footer">
+	<p>企业培训 | 合作事宜 | 版权投诉</p>
+	<p>苏ICP 备12345678. © 2009-2016 瓢城企训网. Powered by Bootstrap.</p>
 </div>
 
-
-<div class="tab3">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-sm-6">
-				<img src="img/tab3.png" class="auto img-responsive center-block" alt="">
-			</div>
-			<div class="text col-md-6 col-sm-6">
-				<h3>�����Ĺ�����ʽ</h3>
-				<p>���µĹ�����ѵ��������������ҵ�ϳ�ͬ�С�</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<footer id="footer">
-	<div class="container">
-		<p>��ҵ��ѵ | �������� | ��ȨͶ��</p>
-		<p>��ICP ��12345678. ? 2009-2016 ư����ѵ��. Powered by Bootstrap.</p>
-	</div>
-</footer>
-
-
-<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	//�ֲ��Զ�����
-	$('#myCarousel').carousel({
-		//�Զ�4�벥��
-		interval : 4000,
-	});
-
-	// //���ô�ֱ����
-	// $('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
-	// $(window).resize(function () {
-	// 	var $height = $('.carousel-inner img').eq(0).height() || 
-	// 				  $('.carousel-inner img').eq(1).height() || 
-	// 				  $('.carousel-inner img').eq(2).height();
-	// 	$('.carousel-control').css('line-height', $height + 'px');
-	// });
-
-	//�������ִ�ֱ���У��ȸ����������ͼƬ��˳�����⣬���¸߶��޷���ȡ
-	$(window).load(function () {
-		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
-	});
-	
-
-	$(window).resize(function () {
-		$('.text').eq(0).css('margin-top', ($('.auto').eq(0).height() - $('.text').eq(0).height()) / 2 + 'px');
-	});
-
-	$(window).load(function () {
-		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
-	});
-
-	$(window).resize(function () {
-		$('.text').eq(1).css('margin-top', ($('.auto').eq(1).height() - $('.text').eq(1).height()) / 2 + 'px');
-	});
-
-</script>
+<script src="js/js.js"></script>
 </body>
 </html>
